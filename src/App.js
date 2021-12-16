@@ -8,6 +8,9 @@ function App() {
     <div>
   <Home></Home>
   <h1> This is helth related website whice name is fitness gym</h1>
+  <h1> This is helth related website whice name is fitness gym</h1>
+  <h1> This is helth related website whice name is fitness gym</h1>
+  <h1> This is helth related website whice name is fitness gym</h1>
       
 
     </div>
