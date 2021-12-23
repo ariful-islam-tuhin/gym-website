@@ -1,0 +1,85 @@
+/* this is style of carosel banner */
+/* 
+.container-now{
+    position: relative;
+    box-sizing: border-box;
+    width:100%;
+    height: 500px;  
+    
+} 
+.img-now{    
+    display: block;
+    width: 100%;
+    height: 500px; 
+    transition: 0.5s ease;
+    backface-visibility: hidden;     
+}
+.middle-now{
+     transition: 0.5s ease;
+     opacity: 0;
+     position: absolute;
+     width: 100%; 
+     overflow: hidden;
+     height: 500px; 
+   
+     background-color: rgb(124, 46, 46);
+    transform: translate(-0%, -100%); 
+     text-align: center; 
+}
+.text-now{
+ 
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    padding: 221px 30px;
+    height: 500px; 
+    width: 59%; 
+    overflow: hidden; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;    
+}
+.container-now :hover.middle-now{
+opacity: .7;
+}
+.container-now :hover.text-now{
+ color:white;
+} 
+.feedback {
+  background-color: #0d0442;
+  padding: 2% 3%;
+  max-height: 800px;
+}
+.carousel-item {
+  padding: 5% 4%;
+  text-align: center;
+  font: italic;
+  color: white;
+}
+.feedback-img {
+  left: 0;
+  top: 0;
+  max-height: 350px;
+  width: 100%;
+  background-size: 100% 100%;
+  padding: 0px;
+}
+.carousel-indicators {
+  bottom: -20px;
+}
+*/
+/* ============ start here gym center design=================== */
+.video-div{  
+    height: 620px;
+    margin-top: -60px; 
+    z-index: -1; 
+}
+
+.video {
+  width: 100%;
+  max-height:100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* background: #232a34; */
+  position: absolute;
+}
+

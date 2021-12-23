@@ -1,11 +1,15 @@
 import React from 'react';
+import "./Banner.css";
+
+
 
 const Banner = () => {
+
     return (
-        <div>
-            <img className='' src="https://image.freepik.com/free-photo/woman-doing-squats-smith-machine_7502-9063.jpg" />
-            <h1>this is a good banner</h1>
-            
+        <div className='video-div'>          
+            <video className='video' loop autoPlay muted>               
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-sportswear-stretching-her-body-outdoors-40749-large.mp4" />    
+            </video>       
         </div>
     );
 };
