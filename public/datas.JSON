@@ -1,33 +1,33 @@
 [
   {
-    "id": 1,
+    "id":"1",
     "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "para": "Wealth management is the ability of an advisor or advisory team to deliver a full range of financial services and products to an affluent client in a consultative way."   
   },
   {
-    "id": 1,
-    "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "id":"2",
+    "name": "SPECIAL CLASSES",
+    "para": "While stocks typically are higher risk investments due to market volatility, they offer potentially high returns. Let us help you manage your portfolio and offer financial advice."   
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "para": "We offer a variety of solutions from leading financial service providers, so you have many options when deciding what type of annuity is right for you."   
   },
   {
-    "id": 1,
-    "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "id": 4,
+    "name": "GROUP CLASSES",
+    "para": "Finding a balance with your money is a crucial part of personal finance. Saving for retirement does not have to be mutually exclusive from saving for college"   
   },
   {
-    "id": 1,
-    "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "id": 5,
+    "name": "GROUP OWNERS",
+    "para": "You need a financial plan — one that addresses financial needs for every stage of your business life cycle and takes into account your personal financial goals and dreams."   
   },
   {
-    "id": 1,
-    "name": "PERSONAL TRAINING",
-    "para": "sylhet"   
+    "id": 6,
+    "name": "CASH & CREDIT",
+    "para": "You may select from our comprehensive suite of managed account programs, which are designed for various levels of investment experience and sophistication."   
   }
   
 ]

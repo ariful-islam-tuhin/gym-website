@@ -1,0 +1,32 @@
+
+/* @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700'); */
+/* ======= */
+.rainbow{
+  background-color: #0080ff;
+  border-radius: 4px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-decoration: none;  
+}
+.rainbow-2:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red,red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+}
+.service-area{    
+    height:420px;
+    box-sizing: border-box;    
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.img-area{
+    background-image: url("https://image.freepik.com/free-photo/woman-doing-squats-smith-machine_7502-9063.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;    
+}
+.small{
+    color:rgba(255, 255, 255, 0.801);
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.774);
+}

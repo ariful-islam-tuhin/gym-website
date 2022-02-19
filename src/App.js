@@ -1,13 +1,18 @@
 
-import { Route, Switch } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import {  BrowserRouter, Route, Switch } from "react-router-dom";
+
 import "./App.css";
+import AuthProvider from "./Context/AuthProvider";
 import AboutUs from "./Pages/About us/AboutUs";
 import ContactUs from "./Pages/Contact us/ContactUs";
+import Details from "./Pages/Details/Details";
+import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Home/Header/Header";
-
 import Home from "./Pages/Home/Home";
 import Services from "./Pages/Home/Services/Services";
+import Login from "./Pages/Login/Login";
+
+import Register from "./Pages/Register/Register";
 
 
 
@@ -16,8 +21,8 @@ import Services from "./Pages/Home/Services/Services";
 
 function App() {
   return (
-    <div>
-
+    <div className="App">
+      <AuthProvider>
       <BrowserRouter>
         <Header></Header>
         <Switch>
@@ -25,10 +30,19 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/home">
-         <Home></Home>
+            <Home></Home>
           </Route>
           <Route path="/services">
-         <Services></Services>
+            <Services></Services>
+          </Route>
+          <Route path="/UseService/:UseServiceId">
+            <Details></Details>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
 
           <Route path="/aboutus">
@@ -37,8 +51,15 @@ function App() {
           <Route path="/contactus">
             <ContactUs></ContactUs>
           </Route>
+         
         </Switch>
+        <Route>
+            <Footer></Footer>
+          </Route>
       </BrowserRouter>
+      </AuthProvider>
+
+      
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.service-div{
+    background-image: url("https://image.freepik.com/free-photo/woman-doing-squats-smith-machine_7502-9063.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    text-align: center;
+    color:white;
+    margin-top: -20px;
+
+   
+}
+.our-service{    
+    background-color: rgba(7, 3, 3, 0.836);
+    padding:60px;
+
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    color:white; 
+   
+    /* margin-top: -50px;       */
+   
+}
+.opacity{
+    background-color: rgba(7, 3, 3, 0.836);
+
+}

@@ -1,28 +1,32 @@
-.navbar {
+
+ .navbar {
 
     padding: 15px;
     background-color: #0303037a;
     clear: both;
     z-index: 1;
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmA-DHTp6PNwZAqFOiS-1sr_sLO07HfLDcEw&usqp=CAU); */
+    
   }
   
   .NavLink {
     margin-right: 10px;
     text-decoration: none;
-    color: #0abc9a;
+    color: #188d78;
+    text-decoration: none;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     width: 50px;
     height: auto;
-  }
-  .logoutbtn {
-    color: #fffefe;
+  } */
+  .logout-button {
+    color: #f1f0f0;
+    background-color: rgb(15, 15, 14);
+    width:80px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
   }
-  .header-logo {
+  /* .header-logo {
     max-height: 5vh;
-  }
+  }  */

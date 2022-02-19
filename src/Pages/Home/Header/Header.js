@@ -1,36 +1,53 @@
+
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import "./Header.css";
 
 const Header = () => {
-    const activeStyle = {
-        fontWeight: "bold",
-        color: "white",
-    };
+
+    const { user, logout } = useAuth();
+    const activeStyle = { fontWeight: "bold", color: "white" };
+    // const activeStyle = {
+    //     fontWeight: "bold",
+    //     color: "white",
+    // };
+    // const { user, logOut } = useAuth();
+    // const { user, logOut } = useAuth();
+
     return (
-
         <div>
-          <i class="fas fa-camera"></i>
-
+            {/* <i class="fas fa-camera"></i> */}
             <nav className="navbar navbar-expand-sm navbar-dark">
-                <Link to="/" className="text-white">
-
-                    Fitness Gym
-                </Link>
+                <Link activeStyle={activeStyle} to="/" className="text-white"> {" "} Fitness Gym  {" "} </Link>
                 <div className="navbar-nav  ms-auto">
-                    <NavLink className="NavLink" to="/home" activeStyle={activeStyle}>
-                        Home
-                    </NavLink>
-                    <NavLink className="NavLink" to="/services" activeStyle={activeStyle}>
-                      Services
-                    </NavLink>
-                
-                    <NavLink className="NavLink" to="/aboutus" activeStyle={activeStyle}>
-                        About Us
-                    </NavLink>
-                    <NavLink className="NavLink" to="/contactus" activeStyle={activeStyle}>
-                        Contact Us
-                    </NavLink>
+
+                    <Link activeStyle={activeStyle} className="NavLink" to="/home" > {" "} Home  {" "}  </Link>
+                    <Link activeStyle={activeStyle} className="NavLink" to="/services" > {" "} Services  {" "}  </Link>
+                    <Link activeStyle={activeStyle} className="NavLink" to="/aboutus" > {" "} About Us  {" "}  </Link>
+                    <Link activeStyle={activeStyle} className="NavLink" to="/contactus" > {" "} Contact Us  {" "}  </Link>
+                    <Link activeStyle={activeStyle} className="NavLink" to="/login" > {" "} Login  {" "}  </Link>
+                 
+
+
+                    {/* <span>{user.displayName} </span> */}
+                    {user?.email && <button className='logout-button' onClick={logout}> Logout </button>}
+                    
+                   
+
+                    {/* {user.email ? (
+                        <span onClick={logOut}>
+                            Log out
+                        </span>
+                    ) : (
+                        <>
+                            <NavLink className="NavLink" to="/login" activeStyle={activeStyle}>
+                                Login
+                            </NavLink>
+                          
+                        </>
+                    )} */}
+
 
                 </div>
             </nav>
