@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { FaFacebookSquare, FaGoogle } from 'react-icons/fa';
-import { Button } from 'react-bootstrap';
+
 
 
 
@@ -54,7 +54,7 @@ const Login = () => {
                 <div style={{ width: '400px', padding: '50px' }} >
 
                     <span onClick={signInUsingGoogle} > <FaGoogle style={{ color: 'red', fontSize: '30px' }} /> </span>
-                    <span onClick={signInUsingGoogle} > <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
+                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
                     <br />
                     <br />
 

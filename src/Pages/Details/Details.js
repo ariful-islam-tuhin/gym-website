@@ -1,26 +1,27 @@
-import {React,  useEffect, useState } from 'react';
+import { React } from 'react';
 import { useParams } from 'react-router';
+import useAuth from '../../hooks/useAuth';
+import "./Detaisl.css";
 
 
 const Details = () => {
 
-    const {UseServiceId} = useParams();
-    const [UseService, setUseService] = useState([]);
+    const { serviceeId } = useParams();
+    const { services } = useAuth();
 
- 
 
-    useEffect( () => {        
-        fetch(`services/${UseServiceId}`)
-          .then((res) => res.json())
-          .then((data) => setUseService(data));
-    },[])
 
- 
+    const singleService = services?.find(
+        (service) => service.id === parseInt(serviceeId)
+    );
+
+  
+
+
     return (
-        <div>
-            <h2>coming soon {UseServiceId}</h2>
-            <h1>{UseService.name}</h1>
-            
+        <div className='details-div'>
+            <h2>{singleService?.name}</h2>
+            <p>{singleService?.para}</p>
         </div>
     );
 };

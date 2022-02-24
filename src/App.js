@@ -12,6 +12,7 @@ import Home from "./Pages/Home/Home";
 import Services from "./Pages/Home/Services/Services";
 import Login from "./Pages/Login/Login";
 
+
 import Register from "./Pages/Register/Register";
 
 
@@ -35,8 +36,10 @@ function App() {
           <Route path="/services">
             <Services></Services>
           </Route>
-          <Route path="/UseService/:UseServiceId">
+         
+          <Route path="/servicee/:serviceeId">
             <Details></Details>
+     
           </Route>
           <Route path="/login">
             <Login></Login>

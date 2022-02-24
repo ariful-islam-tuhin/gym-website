@@ -1,12 +1,12 @@
 [
   {
-    "id":"1",
-    "name": "PERSONAL TRAINING",
+    "id":1,
+    "name": "PERSONALL TRAINING",
     "para": "Wealth management is the ability of an advisor or advisory team to deliver a full range of financial services and products to an affluent client in a consultative way."   
   },
   {
-    "id":"2",
-    "name": "SPECIAL CLASSES",
+    "id":2,
+    "name": "SPECIALL CLASSES",
     "para": "While stocks typically are higher risk investments due to market volatility, they offer potentially high returns. Let us help you manage your portfolio and offer financial advice."   
   },
   {

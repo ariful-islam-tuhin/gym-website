@@ -1,7 +1,8 @@
 
-import {  GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut, getAuth } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut, getAuth } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/FirebaseInitialize";
+import UseServices from "../Pages/Home/UseServices/UseServices";
 
 
 initializeAuthentication();
@@ -9,11 +10,14 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
-
+    const [services] = UseServices();
     const auth = getAuth()
-    const googleProvider = new GoogleAuthProvider();
-   
+    const [isLoading, setIsLoading] = useState(true);
+
+
     const signInUsingGoogle = () => {
+        setIsLoading(true);
+        const googleProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user);
@@ -22,30 +26,43 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message);
             })
+            .finally(() => setIsLoading(false));
     }
 
- 
 
-    const logout = () => {
+
+    const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({});
             })
+            .finally(() => setIsLoading(false));
     }
 
+    // observe user state change 
+
     useEffect(() => {
-        onAuthStateChanged(auth, user => {
+        const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
             }
-        })
+            else {
+                setUser({})
+            }
+            setIsLoading(false);
+        });
+        return () => unsubscribed;
+
     }, []);
 
     return {
         user,
         error,
-        signInUsingGoogle,      
-        logout
+        signInUsingGoogle,
+        logOut,
+        services,
+        isLoading
     }
 }
 
