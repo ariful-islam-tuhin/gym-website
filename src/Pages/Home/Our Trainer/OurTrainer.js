@@ -14,8 +14,8 @@ const OurTrainer = () => {
                     <p>Business Expert</p>
                    <span> <FaGoogle style={{ color: 'red', fontSize: '30px' }} /> </span>
                    <span><FaTwitter style={{ fontSize: '30px', color: 'blue' }}></FaTwitter></span> 
-                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
-                    <span> <FaYahoo style={{ fontSize: '30px', color: 'green' }} /> </span>
+                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'red' }} /> </span>
+                    <span> <FaYahoo style={{ fontSize: '30px', color: 'blue' }} /> </span>
                
                    
                 </div>
@@ -25,8 +25,8 @@ const OurTrainer = () => {
                     <p>PR Manager</p>
                     <span> <FaGoogle style={{ color: 'red', fontSize: '30px' }} /> </span>
                    <span><FaTwitter style={{ fontSize: '30px', color: 'blue' }}></FaTwitter></span> 
-                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
-                    <span> <FaYahoo style={{ fontSize: '30px', color: 'green' }} /> </span>
+                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'red' }} /> </span>
+                    <span> <FaYahoo style={{ fontSize: '30px', color: 'blue' }} /> </span>
                 </div>
                 <div className='col-lg-3 border rounded '>
                     <img src="https://demo.hasthemes.com/koshrot-preview-v1/images/team-16-246x250.jpg" alt="" />
@@ -34,8 +34,8 @@ const OurTrainer = () => {
                     <p>Senior HR Manager</p>
                     <span> <FaGoogle style={{ color: 'red', fontSize: '30px' }} /> </span>
                    <span><FaTwitter style={{ fontSize: '30px', color: 'blue' }}></FaTwitter></span> 
-                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
-                    <span> <FaYahoo style={{ fontSize: '30px', color: 'green' }} /> </span>
+                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'red' }} /> </span>
+                    <span> <FaYahoo style={{ fontSize: '30px', color: 'blue' }} /> </span>
                 </div>
                 <div className='col-lg-3 border rounded'>
                     <img src="https://demo.hasthemes.com/koshrot-preview-v1/images/team-15-246x250.jpg" alt="" />
@@ -43,8 +43,8 @@ const OurTrainer = () => {
                     <p>Marketing Expert</p>
                     <span> <FaGoogle style={{ color: 'red', fontSize: '30px' }} /> </span>
                    <span><FaTwitter style={{ fontSize: '30px', color: 'blue' }}></FaTwitter></span> 
-                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'green' }} /> </span>
-                    <span> <FaYahoo style={{ fontSize: '30px', color: 'green' }} /> </span>
+                    <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'red' }} /> </span>
+                    <span> <FaYahoo style={{ fontSize: '30px', color: 'blue' }} /> </span>
                 </div>
 
             </div>

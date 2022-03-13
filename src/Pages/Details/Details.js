@@ -22,6 +22,7 @@ const Details = () => {
         <div className='details-div'>
             <h2>{singleService?.name}</h2>
             <p>{singleService?.para}</p>
+           
         </div>
     );
 };
