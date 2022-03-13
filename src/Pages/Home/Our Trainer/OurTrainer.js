@@ -7,6 +7,7 @@ import './OurTrainer.css'
 const OurTrainer = () => {
     return (
         <div className='container p-4 mt-4'>
+            <h1>Our Trainer</h1>
             <div className='row '>
                 <div className='col-lg-3 border rounded'>
                     <img src="https://demo.hasthemes.com/koshrot-preview-v1/images/team-13-246x250.jpg" alt="" />
@@ -46,9 +47,7 @@ const OurTrainer = () => {
                     <span> <FaFacebookSquare style={{ fontSize: '30px', color: 'red' }} /> </span>
                     <span> <FaYahoo style={{ fontSize: '30px', color: 'blue' }} /> </span>
                 </div>
-
             </div>
-
         </div>
     );
 };
